@@ -25,7 +25,7 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body>
+<body ng-app="GoOutSmart">
 <div class="navbar-wrapper">
     <div class="container">
 
@@ -134,9 +134,10 @@
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="container marketing">
+<div class="container marketing" ng-controller="HomeController">
 
     <!-- Three columns of text below the carousel -->
+    <p>{{message}}</p>
 
 
     <!-- /END THE FEATURETTES -->
@@ -157,6 +158,8 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="app/app.js"></script>
 
 
 </body>
